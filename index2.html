@@ -73,12 +73,15 @@
                 <a class="navbar-brand" href="#">
                     <img class= "app-img" src="./assets/LOGO.png" class="img-thumbnail" >
                 </a>
-                    
+
+
                      
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
                     </button>
-                  
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ">
                         <li class="nav-item active">
@@ -104,13 +107,12 @@
     </header>
 <div class="jumbotron jumbotron-fluid">
 
-    <div class="overlay"></div>
     <video playsinline="playsinline" class="video-hero" autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
     <div class="container-fluid container-hero">
 
-        <div class="row">
+        <div class="row content-hero">
             <div class="col-md-2"></div>
             <div class="col-md-4 col-sm-6 my-5 ">
 
@@ -122,7 +124,7 @@
             </div>
             <div class="col-md-4 col-sm-6  my-5 container-form">
                 <h3 class=" app-form h3 text-center text-white">Register Now!</h3>
-                <form action="" class="form-main">
+                <form action="" class="form-main" >
 
                     <div class="row">
                         <div class="col">
@@ -453,31 +455,32 @@
             <div class="text-testimonials">
                 <h6>View Testimonials</h6>
                 <p>FOR US IS VERY IMPORTANT TO KNOW THE OPINONS OF OUR CLIENTS</p>
+                <div class="container-video" style="display: none;"  id="team-video">
+                    <video
+                            id="player-item"
+
+                            class="video-js"
+                            controls
+                            preload="auto"
+                            width="800"
+                            height="350"
+                            data-setup="{}"
+                            autoplay="true"
+                    >
+                        <!-- default video -->
+                        <source src="assets/hero-video.mp4" id="source" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank"
+                            >supports HTML5 video</a
+                            >
+                        </p>
+                    </video>
+                </div>
 
             </div>
-            <div class="container-video" style="display: none;"  id="team-video">
-                <video
-                        id="player-item"
 
-                        class="video-js"
-                        controls
-                        preload="auto"
-                        width="800"
-                        height="350"
-                        data-setup="{}"
-                        autoplay="true"
-                >
-                    <!-- default video -->
-                    <source src="assets/hero-video.mp4" id="source" type="video/mp4" />
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                        <a href="https://videojs.com/html5-video-support/" target="_blank"
-                        >supports HTML5 video</a
-                        >
-                    </p>
-                </video>
-            </div>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4">
@@ -558,13 +561,13 @@
         </div>
         <div class="col-md-3">
             <h6 class="text-warning p-3">Quick Links</h6>
-            <a class="text-white text-center">Abuot Us</a>
+            <a class="text-white text-center" href="#about_us">Abuot Us</a>
             <br>
-            <a class="text-white text-center">Courses</a>
+            <a class="text-white text-center" href="#courses">Courses</a>
             <br>
-            <a class="text-white text-center">Team</a>
+            <a class="text-white text-center" href="#team">Team</a>
             <br>
-            <a class="text-white text-center">Contact Us</a>
+            <a class="text-white text-center" href="#contact">Contact Us</a>
             
         </div>
         <div class="col-md-3">
